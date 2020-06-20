@@ -1,7 +1,7 @@
 import { StringOrNumber } from '../types';
 
-const ar = /^[٠١٢٣٤٥٦٧٨٩]+$/;
-const en = /^[0-9]+$/;
+const ar = /^[-]?[٠١٢٣٤٥٦٧٨٩]+\.?[٠١٢٣٤٥٦٧٨٩]+$/;
+const en = /^[-]?[0-9]+\.?[0-9]+$/;
 
 const validate = (value: StringOrNumber | StringOrNumber[]) => {
   const testValue = (val: StringOrNumber) => {
